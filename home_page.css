@@ -1,0 +1,133 @@
+header {
+  top: 0px;
+  width: 100%;
+  height: 200px;
+  background-color: #e8ddddc5;
+  position: fixed;
+  border-width: 10px;
+  border:3px groove#b99099;
+}
+h1 {
+  color: #b99099;
+  text-shadow: 2px 2px 4px #000000be;
+  text-align: center;
+  font-size: 65px;
+}
+div.logo {
+  left: 40px;
+  top: 40px;
+  position: fixed;
+}
+img.logo {
+  width: 90px;
+  height: 90px;
+}
+button.en_btn , button.ru_btn , button.ar_btn , button.jp_btn {
+  background-color: transparent;
+  border: 1px solid #d1adb5;
+  box-sizing: border-box;
+  color:#2c395e;
+  font-family: "Avenir Next LT W01 Bold";
+  font-size: 15px;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  touch-action: manipulation;
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 50px;            
+}
+button.en_btn:hover , button.ru_btn:hover , button.ar_btn:hover , button.jp_btn:hover {
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50px;   
+}
+button.en_btn::before , button.ru_btn::before , button.ar_btn::before , button.jp_btn:before {
+  background-color: #e8dddd;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+  border-radius: 50px;   
+}
+button.en_btn:hover:before , button.ru_btn:hover:before, button.ar_btn:hover:before, button.jp_btn:hover:before {
+  background-color: #b99099d5;
+}
+@media (min-width: 768px) {}
+main.en_mn{
+  top: 230px;
+  width: 100%;
+  height: 650px;
+  background-color: #704a4c;
+  position: absolute;
+  border-width: 10px;
+  border:3px groove#b99099;
+  align-items: normal;
+}
+div.en_dimg {
+  top: 250px;
+  left: 760px;
+  background-color: transparent;
+  position: absolute;
+  }
+img.en_img{
+  width: 500px;
+  height: 600px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+.Dropdown-Toggle{
+  width: 150px;
+  color: #77585E;
+  background-color: #77585E;
+  border-style: outset;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(51, 6, 9, 0.2), 0 6px 20px 0 rgba(88, 60, 70, 0.19);
+}
+.Dropdown {
+  position: fixed;
+  display: inline-block;
+  top: 20px;
+  right: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.Dropdown-Content {
+  width: 470px;
+  height: 70px;
+  right: 10px;
+  display: none;
+  position: absolute;
+  background-color: #BCAEB1;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.Dropdown-Content a {
+  color: #E1D7D9;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+}
+.Dropdown-Content a:hover {
+  background-color: #E4DBDC;
+  text-shadow: 2px 2px 8px #8EA2B2;
+}
+.Dropdown:hover .Dropdown-Content {
+  display: block;
+}
+.Dropdown-bottom button {
+  display: none;
+}
+.Dropdown:hover .Dropdown-bottom button {
+  display: block;
+}
